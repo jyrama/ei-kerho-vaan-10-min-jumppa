@@ -1,0 +1,33 @@
+<h2>Show Visitor</h2>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @visitor.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @visitor.last_name %>
+  </li>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @visitor.address %>
+  </li>
+
+  <li>
+    <strong>Zip:</strong>
+    <%= @visitor.zip %>
+  </li>
+
+  <li>
+    <strong>Municipality:</strong>
+    <%= @visitor.municipality %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: visitor_path(@conn, :edit, @visitor) %></span>
+<span><%= link "Back", to: visitor_path(@conn, :index) %></span>
